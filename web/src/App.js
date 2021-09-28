@@ -38,6 +38,11 @@ function App() {
       {/*Testing my Label */}
 
       <Label name="Topic 1" backgroundColor="blue" textColor="#000000" />
+      <Label
+        name="Long Topic Name"
+        backgroundColor="green"
+        textColor="#000000"
+      />
 
       <div>
         <Switch>
