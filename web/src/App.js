@@ -48,25 +48,68 @@ function App() {
         </Switch>
       </div>
       <div>
-        <Button onClick={clickMe}>Button</Button>
+        <SettingsButton onClick={clickMe}>Settings</SettingsButton>
+      </div>
+      <div>
+        <ChatButton onClick={clickMe}>Chat</ChatButton>
+      </div>
+      <div>
+        <BackButton onClick={clickMe}>Back</BackButton>
       </div>
     </div>
   );
 }
 
-const Button = styled.button`
-  background-color: ${(props) => theme.default};
+const SettingsButton = styled.button`
+  background-color: #4d91ff;
   color: white;
   padding: 5px 15px;
-  border-radius: 5px;
+  border-radius: 17px;
   outline: 0;
-  text-transform: uppercase;
   margin: 10px 0px;
   cursor: pointer;
   box-shadow: 0px 2px 2px lightgray;
   transition: ease background-color 250ms;
   &:hover {
-    background-color: ${(props) => theme.hover};
+    background-color: #1c73ff;
+  }
+  &:disabled {
+    cursor: default;
+    opacity: 0.7;
+  }
+`;
+
+const ChatButton = styled.button`
+  background-color: #e36ae6;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 17px;
+  outline: 0;
+  margin: 10px 0px;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px lightgray;
+  transition: ease background-color 250ms;
+  &:hover {
+    background-color: #df0ee3;
+  }
+  &:disabled {
+    cursor: default;
+    opacity: 0.7;
+  }
+`;
+
+const BackButton = styled.button`
+  background-color: #ff903b;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 17px;
+  outline: 0;
+  margin: 10px 0px;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px lightgray;
+  transition: ease background-color 250ms;
+  &:hover {
+    background-color: #ff6f00;
   }
   &:disabled {
     cursor: default;
