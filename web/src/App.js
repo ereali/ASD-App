@@ -1,9 +1,10 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Container, Nav, Card } from 'react-bootstrap';
-import { Switch, Route, Link, useHistory } from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Navbar, Container, Nav, Card } from "react-bootstrap";
+import { Switch, Route, Link, useHistory } from "react-router-dom";
+import { ShowText } from "./Components/RabieText";
 
 function App() {
-  // const history = useHistory();
+  const history = useHistory();
   return (
     <div className="App">
       <Navbar bg="dark" variant="dark">
@@ -41,7 +42,9 @@ function App() {
           </Route>
           <Route path="/">
             <Card>
-              <Card.Body>Home Route</Card.Body>
+              <div>
+                <ShowText />
+              </div>
             </Card>
           </Route>
         </Switch>
