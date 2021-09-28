@@ -1,6 +1,14 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Container, Nav, Card } from 'react-bootstrap';
-import { Switch, Route, Link, useHistory } from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Navbar, Container, Nav, Card } from "react-bootstrap";
+import {
+  Switch,
+  Route,
+  BrowserRouter as Router,
+  Link,
+  useHistory,
+} from "react-router-dom";
+// UI Components
+import Label from "./Components/Label.jsx";
 
 function App() {
   // const history = useHistory();
@@ -27,6 +35,10 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      {/*Testing my Label */}
+
+      <Label name="Topic 1" backgroundColor="blue" textColor="#000000" />
+
       <div>
         <Switch>
           <Route path="/features">
