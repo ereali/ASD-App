@@ -47,12 +47,15 @@ function App() {
           </Route>
         </Switch>
       </div>
+      <div>
+        <Button onClick={clickMe}>Button</Button>
+      </div>
     </div>
   );
 }
 
 const Button = styled.button`
-  background-color: ${(props) => theme[props.theme].default};
+  background-color: ${(props) => theme.default};
   color: white;
   padding: 5px 15px;
   border-radius: 5px;
@@ -63,7 +66,7 @@ const Button = styled.button`
   box-shadow: 0px 2px 2px lightgray;
   transition: ease background-color 250ms;
   &:hover {
-    background-color: ${(props) => theme[props.theme].hover};
+    background-color: ${(props) => theme.hover};
   }
   &:disabled {
     cursor: default;
