@@ -1,7 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Container, Nav, Card } from 'react-bootstrap';
 import { Switch, Route, Link, useHistory } from 'react-router-dom';
+import styled from 'styled-components';
 
+const Button = styled.button`
+background-color:#f58ef3;
+height: 200px;
+width: 500px;
+font-size:2em;
+`;
+function Printer()
+{
+let num = prompt("enter a number");
+return alert(num);
+}
 function App() {
   // const history = useHistory();
   return (
@@ -12,7 +24,7 @@ function App() {
             <Navbar.Brand href="#home">
               <img
                 alt=""
-                src="logo192.png"
+                src="/logo.svg"
                 width="30"
                 height="30"
                 className="d-inline-block align-top"
@@ -29,6 +41,8 @@ function App() {
       </Navbar>
       <div>
         <Switch>
+	<Route path ="/test">
+	</Route>
           <Route path="/features">
             <Card>
               <Card.Body>Features Route</Card.Body>
@@ -46,8 +60,18 @@ function App() {
           </Route>
         </Switch>
       </div>
+<Link to= "/test">
+<Button>
+TEST
+</Button>
+</Link>
+<Button onClick={Printer}>
+	test number 2
+</Button>
     </div>
   );
+
+
 }
 
 export default App;
