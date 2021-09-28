@@ -1,6 +1,6 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Container, Nav, Card } from 'react-bootstrap';
-import { Switch, Route, Link, useHistory } from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Navbar, Container, Nav, Card } from "react-bootstrap";
+import { Switch, Route, Link, useHistory } from "react-router-dom";
 
 function App() {
   // const history = useHistory();
