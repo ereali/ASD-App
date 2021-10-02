@@ -2,18 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Container, Nav, Card } from 'react-bootstrap';
 import { Switch, Route, Link, useHistory } from 'react-router-dom';
 import styled from 'styled-components';
-
-const Button = styled.button`
-background-color:#f58ef3;
-height: 200px;
-width: 500px;
-font-size:2em;
-`;
-function Printer()
-{
-let num = prompt("enter a number");
-return alert(num);
-}
+import Button from "./Components/Button.jsx";
 function App() {
   // const history = useHistory();
   return (
@@ -60,15 +49,14 @@ function App() {
           </Route>
         </Switch>
       </div>
-<Link to= "/test">
-<Button>
-TEST
+
+<Button
+ children = "test"
+ color = "#20af88"
+textColor =  "#c5be81"
+ onClick = {() => alert("nuts")} >
 </Button>
-</Link>
-<Button onClick={Printer}>
-	test number 2
-</Button>
-    </div>
+  </div>
   );
 
 
