@@ -49,14 +49,14 @@ function App() {
           </Route>
         </Switch>
       </div>
-
 <Button
  children = "test"
  color = "#20af88"
 textColor =  "#c5be81"
- onClick = {() => alert("nuts")} >
+ onClick = {() => alert("test")} >
 </Button>
   </div>
+
   );
 
 
