@@ -43,11 +43,18 @@ function App() {
           <Route path="/">
             <Card>
               <div>
-                <Text></Text>
+                <Text>
+                  Please write the message that you would like your parents to
+                  be aware about!
+                </Text>
 
                 <Textarea></Textarea>
 
-                <Button></Button>
+                <Button>
+                  children = "Submit" color = "#c5be81" textColor ="#c5be81"
+                  onClick = {() => alert("Message submitted Successfully")}
+                  margin = "10px 0px" borderradius = "17px" padding = "5px 15px"
+                </Button>
               </div>
             </Card>
           </Route>
