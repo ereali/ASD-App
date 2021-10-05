@@ -9,8 +9,15 @@ borderRadius: radius;
 color:${props.textColor};
 transition: ease background-color 250ms;
 &:hover {
- background-color: #1c73ff;    //thx edward
+ background-color: #cf75c5;    //thx edward
 ;}
+height: ${props.height};
+width: $(props.width);
+margin: $(props.margin);
+border-radius: $(props.borderradius);
+padding: $(props.padding);
+font-size:50px;
+font-family: Monospace;     //ideally hardcoded
 `;
 
   return (
