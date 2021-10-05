@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Container, Nav, Card } from "react-bootstrap";
 import { Switch, Route, Link, useHistory } from "react-router-dom";
-import { TextField } from "./Components/RabieButton";
+import { Textarea, Button, Text } from "./Components/RabieButton.jsx";
 
 function App() {
   const history = useHistory();
@@ -43,12 +43,11 @@ function App() {
           <Route path="/">
             <Card>
               <div>
-                <TextField
-                  children="Here is what Kids with ASD will see"
-                  color="1f2f56"
-                  textColor="5bbc2f"
-                  onChange={() => alert("I got changed")}
-                ></TextField>
+                <Text></Text>
+
+                <Textarea></Textarea>
+
+                <Button></Button>
               </div>
             </Card>
           </Route>
