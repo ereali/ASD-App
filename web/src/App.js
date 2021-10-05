@@ -37,11 +37,18 @@ function App() {
       </Navbar>
       {/*Testing my Label */}
 
-      <Label name="Topic 1" backgroundColor="blue" textColor="#000000" />
+      <Label name="Change text" backgroundColor="blue" textColor="#000000" />
+      <div></div>
       <Label
-        name="Long Topic Name"
+        name="Change background color"
         backgroundColor="green"
         textColor="#000000"
+      />
+      <div></div>
+      <Label
+        name="Change text color"
+        backgroundColor="green"
+        textColor="white"
       />
 
       <div>

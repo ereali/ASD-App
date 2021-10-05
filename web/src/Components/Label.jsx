@@ -13,6 +13,7 @@ function Label(props) {
         flexDirection: "row",
         padding: "15px",
         fontSize: "50px",
+        margin: "10px",
       }}
     >
       <p>{props.name}</p>
