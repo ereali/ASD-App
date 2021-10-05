@@ -1,24 +1,21 @@
+import React from "react";
 import styled from "styled-components";
 
 function Label(props) {
-  return (
-    <div
-      style={{
-        backgroundColor: props.backgroundColor,
-        color: props.textColor,
-        borderRadius: "17px",
-        textAlign: "center",
-        verticalAlign: "center",
-        display: "inline-flex",
-        flexDirection: "row",
-        padding: "15px",
-        fontSize: "50px",
-        margin: "10px",
-      }}
-    >
-      <p>{props.name}</p>
-    </div>
-  );
+  const Label = styled.div`
+    background-color: ${props.backgroundColor};
+    color: ${props.textColor};
+    borderradius: 17px;
+    text-align: center;
+    vertical-align: center;
+    display: inline-flex;
+    flex-direction: row;
+    padding: 15px;
+    font-size: 50px;
+    margin: 10px;
+  `;
+
+  return <Label>{props.name}</Label>;
 }
 
 export default Label;
