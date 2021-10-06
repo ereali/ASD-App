@@ -8,7 +8,7 @@ import {
   useHistory,
 } from "react-router-dom";
 // UI Components
-import Label from "./Components/Label.jsx";
+import TopicTownView from "./TopicTownView";
 
 function App() {
   // const history = useHistory();
@@ -35,7 +35,7 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      {/*Testing my Label */}
+      {/*Testing my Label 
 
       <Label name="Change text" backgroundColor="blue" textColor="#000000" />
       <div></div>
@@ -50,6 +50,10 @@ function App() {
         backgroundColor="green"
         textColor="white"
       />
+
+      */}
+
+      <TopicTownView />
 
       <div>
         <Switch>
