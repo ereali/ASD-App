@@ -35,25 +35,8 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      {/*Testing my Label 
 
-      <Label name="Change text" backgroundColor="blue" textColor="#000000" />
-      <div></div>
-      <Label
-        name="Change background color"
-        backgroundColor="green"
-        textColor="#000000"
-      />
-      <div></div>
-      <Label
-        name="Change text color"
-        backgroundColor="green"
-        textColor="white"
-      />
-
-      */}
-
-      <TopicTownView />
+      {/*<TopicTownView /> */}
 
       <div>
         <Switch>

@@ -11,16 +11,6 @@ function TopicTownView() {
           <TopicTown imageLink={TownImage} labelText="Topic Name 1" />
         </Col>
       </Row>
-      <Row>
-        <Col md={3}>
-          <TopicTown imageLink={TownImage} labelText="Topic Name 1" />
-        </Col>
-      </Row>
-      <Row>
-        <Col md={4}>
-          <TopicTown imageLink={TownImage} labelText="Topic Name 1" />
-        </Col>
-      </Row>
     </Container>
   );
 }
