@@ -1,4 +1,3 @@
-import Button from "@restart/ui/esm/Button";
 import React from "react";
 import styled from "styled-components";
 
@@ -12,7 +11,13 @@ function Button(props) {
       background-color: #1c73ff; //thx Marcos
     }
   `;
-  return <Button onClick={props.onClick}> {props.children} </Button>;
-}
 
+  return (
+    <Button 
+     onClick = {props.onClick} 
+    >
+{props.children} 
+    </Button>
+  );
+}
 export default Button;
