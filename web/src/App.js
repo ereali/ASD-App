@@ -6,7 +6,7 @@ import Text from "./Components/Text.jsx";
 import Textarea from "./Components/TextArea.jsx";
 
 function App() {
-  const history = useHistory();
+  // const history = useHistory();
   return (
     <div className="App">
       <Navbar bg="dark" variant="dark">
@@ -49,14 +49,12 @@ function App() {
                   Please write the message that you would like your parents to
                   be aware about!
                 </Text>
-
-                <Textarea></Textarea>
-
-                <Button>
-                  children = "Submit" color = "#c5be81" textColor ="#c5be81"
-                  onClick = {() => alert("Message submitted Successfully")}
-                  margin = "10px 0px" borderradius = "17px" padding = "5px 15px"
-                </Button>
+              </div>
+              <div>
+                <Textarea> </Textarea>
+              </div>
+              <div>
+                <Button></Button>
               </div>
             </Card>
           </Route>

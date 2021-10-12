@@ -8,16 +8,10 @@ function Button(props) {
     color: ${props.textColor};
     transition: ease background-color 250ms;
     &:hover {
-      background-color: #1c73ff; //thx Marcos
+      background-color: #cf75c5;
     }
   `;
 
-  return (
-    <Button 
-     onClick = {props.onClick} 
-    >
-{props.children} 
-    </Button>
-  );
+  return <Button onClick={props.onClick}>{props.children}</Button>;
 }
 export default Button;
