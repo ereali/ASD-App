@@ -1,7 +1,9 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Container, Nav, Card } from 'react-bootstrap';
-import { Switch, Route, Link, useHistory } from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Navbar, Container, Nav, Card } from "react-bootstrap";
+import { Switch, Route, Link, useHistory } from "react-router-dom";
 import Button from "./Components/Button.jsx";
+import chat from "./chat-121.png"
+import trophy from "./trophy.png"
 function App() {
   // const history = useHistory();
   return (
@@ -11,8 +13,8 @@ function App() {
           <Navbar.Collapse>
             <Navbar.Brand href="#home">
               <img
-                alt=""
-                src="/logo.svg"
+                alt="failed"
+                src="./logo.svg"
                 width="30"
                 height="30"
                 className="d-inline-block align-top"
@@ -29,8 +31,7 @@ function App() {
       </Navbar>
       <div>
         <Switch>
-	<Route path ="/test">
-	</Route>
+          <Route path="/test"></Route>
           <Route path="/features">
             <Card>
               <Card.Body>Features Route</Card.Body>
@@ -48,37 +49,84 @@ function App() {
           </Route>
         </Switch>
       </div>
-<Button
- children = "test button"
- color = "#c5be81"
- textColor =  "#c5be81"
- onClick = {() => alert("test")}
- margin = "10px 0px"
- borderradius = "17px"
- padding = "5px 15px"
+      <div>
+      
+      <h1>PARENT PORTAL</h1>
+      <div>
+      <Button
+        //children="./logo"
+        color="#c5be81"
+        textColor="#c5be81"
+        onClick={() => alert("test")}
+        margin="10px 0px"
+        borderradius="16px"
+        padding="5px 15px"
+        height = "100px"
+        width = "100px"
+      ><img src={chat}/></Button>
+      <Button
+        //children="Color Pallete"
+        onClick={() => alert("I've been clicked")}
+        color="#C08497"
+        textColor="#FFFFFF"
+        margin="10px 0px"
+        borderradius="16px"
+        padding="5px 15px"
+        height = "100px"
+        width = "100px"
+      ><img src={trophy}/></Button></div>
+      <div>
+      <Button
+        //children="Smaller"
+        onClick={() => prompt("type a number in")}
+        color="#d31d1d"
+        textColor="#00000"
+        margin="10px 0px"
+        borderradius="16px"
+        padding="5px 15px"
+        height = "100px"
+        width = "100px"
+      ></Button>
+      <Button
+        //children="Smaller"
+        onClick={() => prompt("type a number in")}
+        color="#d31d1d"
+        textColor="#00000"
+        margin="10px 0px"
+        borderradius="16px"
+        padding="5px 15px"
+        height = "100px"
+        width = "100px"
+      ></Button>
+      <div>
+      <Button
+        //children="Smaller"
+        onClick={() => prompt("type a number in")}
+        color="#d31d1d"
+        textColor="#00000"
+        margin="10px 0px"
+        borderradius="16px"
+        padding="5px 15px"
+        height = "100px"
+        width = "100px"
+      ></Button>
+      <Button
+        //children="Smaller"
+        onClick={() => prompt("type a number in")}
+        color="#d31d1d"
+        textColor="#00000"
+        margin="10px 0px"
+        borderradius="16px"
+        padding="5px 15px"
+        height = "100px"
+        width = "100px"
+      ></Button>
+      </div>
+      </div>
 
- >
-</Button>
-
-<Button
-children = "Color Pallete"
-onClick = {() => alert("I've been clicked")}
-color= "#C08497"
-textColor = "#FFFFFF" 
->
-</Button>
-<Button
-children = "Smaller"
-onClick = {() => prompt("type a number in")}
-color = "#d31d1d"
-textColor = "#00000"
->
-</Button> 
-</div>
-
+      </div>
+    </div>
   );
-
-
 }
 
 export default App;

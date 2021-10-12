@@ -12,11 +12,10 @@ transition: ease background-color 250ms;
  background-color: #cf75c5;    //thx edward
 ;}
 height: ${props.height};
-width: $(props.width);
+width: ${props.width};
 margin: $(props.margin);
-border-radius: $(props.borderradius);
-padding: $(props.padding);
-font-size:50px;
+border-radius: ${props.borderradius};
+font-size: ${props.fontsize};
 font-family: Monospace;     //ideally hardcoded
 `;
 
