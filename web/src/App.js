@@ -2,6 +2,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Container, Nav, Card } from "react-bootstrap";
 import { Switch, Route, Link, useHistory } from "react-router-dom";
 import styled from "styled-components";
+import FourButtonModule from "./Components/fourbuttonquizmodule";
+import TrueFalseModule from "./Components/truefalsequizmodule";
 
 function App() {
   // const history = useHistory();
@@ -56,69 +58,20 @@ function App() {
       <div>
         <BackButton onClick={clickMe}>Back</BackButton>
       </div>
+      <div>
+        <FourButtonModule
+          Answer1="hello world"
+          Answer2="hey"
+          Answer3="wow"
+          Answer4="woah"
+          backgroundColor="#1556bf"
+          textColor="#ffffff"
+          fontSize="17px"
+          hoverBackgroundColor="#0e3a80"
+        />
+      </div>
     </div>
   );
-}
-
-const SettingsButton = styled.button`
-  background-color: #4d91ff;
-  color: white;
-  padding: 5px 15px;
-  border-radius: 17px;
-  outline: 0;
-  margin: 10px 0px;
-  cursor: pointer;
-  box-shadow: 0px 2px 2px lightgray;
-  transition: ease background-color 250ms;
-  &:hover {
-    background-color: #1c73ff;
-  }
-  &:disabled {
-    cursor: default;
-    opacity: 0.7;
-  }
-`;
-
-const ChatButton = styled.button`
-  background-color: #e36ae6;
-  color: white;
-  padding: 5px 15px;
-  border-radius: 17px;
-  outline: 0;
-  margin: 10px 0px;
-  cursor: pointer;
-  box-shadow: 0px 2px 2px lightgray;
-  transition: ease background-color 250ms;
-  &:hover {
-    background-color: #df0ee3;
-  }
-  &:disabled {
-    cursor: default;
-    opacity: 0.7;
-  }
-`;
-
-const BackButton = styled.button`
-  background-color: #ff903b;
-  color: white;
-  padding: 5px 15px;
-  border-radius: 17px;
-  outline: 0;
-  margin: 10px 0px;
-  cursor: pointer;
-  box-shadow: 0px 2px 2px lightgray;
-  transition: ease background-color 250ms;
-  &:hover {
-    background-color: #ff6f00;
-  }
-  &:disabled {
-    cursor: default;
-    opacity: 0.7;
-  }
-`;
-
-function clickMe() {
-  alert("You clicked me!");
 }
 
 const theme = {
