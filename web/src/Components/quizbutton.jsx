@@ -28,6 +28,7 @@ function Label(props) {
         cursor: pointer;
         box-shadow: 0px 2px 2px lightgray;
         transition: ease background-color 250ms;
+        font-size: ${props.fontSize};
         &:hover {
         background-color: ${props.hoverBackgroundColor};
         }
