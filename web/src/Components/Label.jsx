@@ -10,7 +10,7 @@ function Label(props) {
     vertical-align: center;
     display: inline-block;
     padding: 15px;
-    font-size: 40px;
+    font-size: 35px;
     margin: auto;
   `;
 

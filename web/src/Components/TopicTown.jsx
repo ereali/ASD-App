@@ -6,7 +6,7 @@ import { Image } from "react-bootstrap";
 function TopicTown(props) {
   // props are imageLink, labelText, onClick?
   return (
-    <div className="text-center">
+    <div>
       <Label
         name={props.labelText}
         backgroundColor="green"

@@ -36,27 +36,7 @@ function App() {
         </Container>
       </Navbar>
 
-      {/*<TopicTownView /> */}
-
-      <div>
-        <Switch>
-          <Route path="/features">
-            <Card>
-              <Card.Body>Features Route</Card.Body>
-            </Card>
-          </Route>
-          <Route path="/pricing">
-            <Card>
-              <Card.Body>Pricing Route</Card.Body>
-            </Card>
-          </Route>
-          <Route path="/">
-            <Card>
-              <Card.Body>Home Route</Card.Body>
-            </Card>
-          </Route>
-        </Switch>
-      </div>
+      <TopicTownView />
     </div>
   );
 }
