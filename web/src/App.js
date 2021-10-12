@@ -49,7 +49,7 @@ function App() {
           </Route>
         </Switch>
       </div>
-      <div>
+      {/* <div>
         <SettingsButton onClick={clickMe}>Settings</SettingsButton>
       </div>
       <div>
@@ -57,7 +57,7 @@ function App() {
       </div>
       <div>
         <BackButton onClick={clickMe}>Back</BackButton>
-      </div>
+      </div> */}
       <div>
         <FourButtonModule
           Answer1="hello world"

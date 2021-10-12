@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 function QuizButton(props) {
   const QuizButton = styled.div`
-    name: ${props.Name};
+    name: ${props.name};
     background-color: ${props.backgroundColor};
     color: ${props.textColor};
     padding: 5px 15px;

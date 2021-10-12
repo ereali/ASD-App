@@ -12,14 +12,14 @@ function FourButtonModule(props) {
     <div>
       <div>
         <QuizButton
+          onClick={clickMe}
           name="quizbutton1"
           backgroundColor={props.backgroundColor}
           textColor={props.textColor}
           fontSize={props.fontSize}
           hoverBackgroundColor={props.hoverBackgroundColor}
-          onClick={clickMe}
         >
-          {props.Answer1}
+          "test"
         </QuizButton>
       </div>
       <div>
