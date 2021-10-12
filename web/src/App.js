@@ -1,9 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 import { Navbar, Container, Nav, Card } from "react-bootstrap";
 import { Switch, Route, Link, useHistory } from "react-router-dom";
 import styled from "styled-components";
 import FourButtonModule from "./Components/fourbuttonquizmodule";
 import TrueFalseModule from "./Components/truefalsequizmodule";
+import QuizButton from "./Components/quizbutton";
 
 function App() {
   // const history = useHistory();
@@ -58,27 +60,37 @@ function App() {
       <div>
         <BackButton onClick={clickMe}>Back</BackButton>
       </div> */}
-      <div>
-        <FourButtonModule
-          Answer1="hello world"
-          Answer2="hey"
-          Answer3="wow"
-          Answer4="woah"
-          backgroundColor="#1556bf"
-          textColor="#ffffff"
-          fontSize="17px"
-          hoverBackgroundColor="#0e3a80"
-        />
-      </div>
+
+      <Container classname="quiz">
+        <div className="FourButtonModule">
+          <QuizButton
+            name="quizlabel"
+            backgroundColor="#0bd4a8"
+            textColor="#ffffff"
+            fontSize="30px"
+            hoverBackgroundColor="#079173"
+            content="Is sharing a photo of your face online ok?"
+          />
+        </div>
+        <div className="FourButtonModule">
+          <FourButtonModule
+            content1="Yes"
+            content2="Yes, only if you’ve known them for a few weeks"
+            content3="Yes, but only to people you know in real life"
+            content4="No"
+            backgroundColor="#1556bf"
+            textColor="#ffffff"
+            fontSize="25px"
+            hoverBackgroundColor="#0e3a80"
+          />
+        </div>
+        <br></br>
+        <div className="TrueFalseModule">
+          <TrueFalseModule />
+        </div>
+      </Container>
     </div>
   );
 }
-
-const theme = {
-  blue: {
-    default: "#3f51b5",
-    hover: "#283593",
-  },
-};
 
 export default App;

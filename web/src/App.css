@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.quiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FourButtonModule {
+  margin: 10px, 20px, 20px, 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TrueFalseModule {
+  margin: 10px, 20px, 20px, 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

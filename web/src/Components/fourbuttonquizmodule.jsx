@@ -12,15 +12,13 @@ function FourButtonModule(props) {
     <div>
       <div>
         <QuizButton
-          onClick={clickMe}
           name="quizbutton1"
           backgroundColor={props.backgroundColor}
           textColor={props.textColor}
           fontSize={props.fontSize}
           hoverBackgroundColor={props.hoverBackgroundColor}
-        >
-          "test"
-        </QuizButton>
+          content={props.content1}
+        />
       </div>
       <div>
         <QuizButton
@@ -29,10 +27,8 @@ function FourButtonModule(props) {
           textColor={props.textColor}
           fontSize={props.fontSize}
           hoverBackgroundColor={props.hoverBackgroundColor}
-          onClick={clickMe}
-        >
-          {props.Answer2}
-        </QuizButton>
+          content={props.content2}
+        />
       </div>
       <div>
         <QuizButton
@@ -41,10 +37,8 @@ function FourButtonModule(props) {
           textColor={props.textColor}
           fontSize={props.fontSize}
           hoverBackgroundColor={props.hoverBackgroundColor}
-          onClick={clickMe}
-        >
-          {props.Answer3}
-        </QuizButton>
+          content={props.content3}
+        />
       </div>
       <div>
         <QuizButton
@@ -53,10 +47,8 @@ function FourButtonModule(props) {
           textColor={props.textColor}
           fontSize={props.fontSize}
           hoverBackgroundColor={props.hoverBackgroundColor}
-          onClick={clickMe}
-        >
-          {props.Answer4}
-        </QuizButton>
+          content={props.content4}
+        />
       </div>
     </div>
   );

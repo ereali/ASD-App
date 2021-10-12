@@ -24,9 +24,8 @@ function TrueFalseModule(props) {
           fontSize={props.fontSize}
           hoverBackgroundColor={TrueHoverColor}
           onClick={clickMe}
-        >
-          True
-        </QuizButton>
+          content="True"
+        />
       </div>
       <div>
         <QuizButton
@@ -36,9 +35,8 @@ function TrueFalseModule(props) {
           fontSize={props.fontSize}
           hoverBackgroundColor={FalseHoverColor}
           onClick={clickMe}
-        >
-          False
-        </QuizButton>
+          content="False"
+        />
       </div>
     </div>
   );

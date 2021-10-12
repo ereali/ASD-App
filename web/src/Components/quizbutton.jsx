@@ -23,7 +23,7 @@ function QuizButton(props) {
     }
   `;
 
-  return <QuizButton>(props.name)</QuizButton>;
+  return <QuizButton>{props.content}</QuizButton>;
 }
 
 export default QuizButton;
