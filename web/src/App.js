@@ -1,7 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Container, Nav, Card } from "react-bootstrap";
 import { Switch, Route, Link, useHistory } from "react-router-dom";
-import { Textarea, Button, Text } from "./Components/RabieButton.jsx";
+import Button from "./Components/Button.jsx";
+import Text from "./Components/Text.jsx";
+import Textarea from "./Components/TextArea.jsx";
 
 function App() {
   const history = useHistory();
