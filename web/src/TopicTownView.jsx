@@ -10,15 +10,15 @@ function TopicTownView() {
       <Container>
         <Row>
           <Col md={2}>
-            <TopicTown imageLink={TownImage} labelText="Topic Name 1" />
+            <TopicTown imageLink={TownImage} labelText="Public vs. Private" />
           </Col>
           <Col md={{ span: 2, offset: 6 }}>
-            <TopicTown imageLink={TownImage} labelText="Topic Name 3" />
+            <TopicTown imageLink={TownImage} labelText="Body Changes" />
           </Col>
         </Row>
         <Row>
           <Col md={{ span: 2, offset: 4 }}>
-            <TopicTown imageLink={TownImage} labelText="Topic Name 2" />
+            <TopicTown imageLink={TownImage} labelText="Internet Safety" />
           </Col>
         </Row>
       </Container>

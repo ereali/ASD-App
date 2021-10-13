@@ -35,7 +35,9 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
+      {/*
+     This TopicTownView displays 3 Topic Towns in two rows offset (labels are named within TopicTownView)
+     */}
       <TopicTownView />
     </div>
   );

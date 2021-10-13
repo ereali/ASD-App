@@ -9,7 +9,7 @@ function TopicTown(props) {
     <div>
       <Label
         name={props.labelText}
-        backgroundColor="green"
+        backgroundColor="gray"
         textColor="#000000"
       />
 
