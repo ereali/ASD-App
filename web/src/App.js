@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Container, Nav, Card } from "react-bootstrap";
 import { Switch, Route, Link, useHistory } from "react-router-dom";
+import styled from "styled-components";
 import Button from "./Components/Button.jsx";
 import Text from "./Components/Text.jsx";
 import Textarea from "./Components/TextArea.jsx";
@@ -54,7 +55,12 @@ function App() {
                 <Textarea> </Textarea>
               </div>
               <div>
-                <Button></Button>
+                <Button
+                  children="Submit"
+                  color="#20af88"
+                  textColor="#c5be81"
+                  onClick={() => alert("Submitted")}
+                ></Button>
               </div>
             </Card>
           </Route>
