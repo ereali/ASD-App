@@ -65,10 +65,11 @@ function App() {
         <div className="FourButtonModule">
           <QuizButton
             name="quizlabel"
-            backgroundColor="#0bd4a8"
+            backgroundColor="#1B264F"
+            œ
             textColor="#ffffff"
             fontSize="30px"
-            hoverBackgroundColor="#079173"
+            hoverBackgroundColor="#101730"
             content="Is sharing a photo of your face online ok?"
           />
         </div>
@@ -78,16 +79,13 @@ function App() {
             content2="Yes, only if you’ve known them for a few weeks"
             content3="Yes, but only to people you know in real life"
             content4="No"
-            backgroundColor="#1556bf"
+            backgroundColor="#507255"
             textColor="#ffffff"
             fontSize="25px"
-            hoverBackgroundColor="#0e3a80"
+            hoverBackgroundColor="#324735"
           />
         </div>
         <br></br>
-        <div className="TrueFalseModule">
-          <TrueFalseModule />
-        </div>
       </Container>
     </div>
   );
