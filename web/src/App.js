@@ -1,33 +1,50 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Container, Nav, Card } from 'react-bootstrap';
-import { Switch, Route, Link, useHistory } from 'react-router-dom';
-import LessonModule from './Components/LessonModule';
-import sharinginfo from './sharinginfo.png';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import { Navbar, Container, Nav, Card } from "react-bootstrap";
+import { Switch, Route, Link, useHistory } from "react-router-dom";
+import LessonPage from "./Pages/LessonPage";
+import sharingImage from "./sharing-info.png";
+import speechImage from "./speech.jpeg";
 
 function App() {
-	return (
-		<div className="App">
-			<Navbar bg="dark" variant="dark">
-				<Container>
-					<Navbar.Collapse>
-						<Navbar.Brand href="#home">
-							<img alt="" src="logo192.png" width="30" height="30" className="d-inline-block align-top" />
-							I-CCEW SoBA 2021
-						</Navbar.Brand>
-						<Nav className="me-auto">
-							<Nav.Link>Home</Nav.Link>
-							<Nav.Link>{/* <Link to="/features">Features</Link> */}</Nav.Link>
-							<Nav.Link>{/* <Link to="/pricing">Pricing</Link> */}</Nav.Link>
-						</Nav>
-					</Navbar.Collapse>
-				</Container>
-			</Navbar>
-			<div className="centered-div">
-				<LessonModule label="Sharing Information" imageLink={sharinginfo} />
-				<LessonModule label="Information" imageLink={sharinginfo} />
-			</div>
-		</div>
-	);
+  return (
+    <div className="App">
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Collapse>
+            <Navbar.Brand href="#home">
+              <img
+                alt=""
+                src="logo192.png"
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+              />
+              I-CCEW SoBA 2021
+            </Navbar.Brand>
+            <Nav className="me-auto">
+              <Nav.Link>Home</Nav.Link>
+              <Nav.Link>{/* <Link to="/features">Features</Link> */}</Nav.Link>
+              <Nav.Link>{/* <Link to="/pricing">Pricing</Link> */}</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      <LessonPage
+        lessonTitle="Public vs. Private"
+        lessonSubtitle="Which activities are okay in different places?"
+        backgroundColor="#6B9AC4"
+        modules={[
+          { label: "Things We Say", labelColor: "white", image: sharingImage },
+          {
+            label: "Public Places",
+            labelColor: "white",
+            image: speechImage,
+          },
+        ]}
+      />
+    </div>
+  );
 }
 
 export default App;
