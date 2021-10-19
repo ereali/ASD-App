@@ -11,7 +11,8 @@ const TopicTown = (props) => {
       <Label
         name={props.labelText}
         backgroundColor={props.color}
-        textColor="black"
+        textColor="white"
+        fontWeight="bold"
       />
       <Image src={props.imageLink} />
     </div>
