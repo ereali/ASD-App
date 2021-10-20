@@ -1,10 +1,18 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Container, Nav, Card } from "react-bootstrap";
-import { Switch, Route, Link, useHistory } from "react-router-dom";
 import styled from "styled-components";
 import Button from "./Components/Button.jsx";
 import Text from "./Components/Text.jsx";
 import Textarea from "./Components/TextArea.jsx";
+import {
+  Switch,
+  Route,
+  BrowserRouter as Router,
+  Link,
+  useHistory,
+} from "react-router-dom";
+// UI Components
+import TopicTownView from "./Views/TopicTownView";
 
 function App() {
   // const history = useHistory();
@@ -31,20 +39,7 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <div>
-        <Switch>
-          <Route path="/features">
-            <Card>
-              <Card.Body>Features Route</Card.Body>
-            </Card>
-          </Route>
-          <Route path="/pricing">
-            <Card>
-              <Card.Body>Pricing Route</Card.Body>
-            </Card>
-          </Route>
-          <Route path="/">
-            <Card>
+      <Card>
               <div>
                 <Text
                   text="Please write the message that you would like your parents to 
@@ -65,9 +60,10 @@ function App() {
                 ></Button>
               </div>
             </Card>
-          </Route>
-        </Switch>
-      </div>
+      {
+        //  This TopicTownView displays 3 Topic Towns in two rows offset (labels are named within TopicTownView)
+        // <TopicTownView />
+      }
     </div>
   );
 }
