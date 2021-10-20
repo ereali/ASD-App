@@ -1,9 +1,15 @@
 import { Button, Container, Row, Col, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import TownImage from "./TownImage.svg";
-import TopicTown from "./Components/TopicTown.jsx";
+import TownImage from "../Resources/TopicTown/TownImage.svg";
+import TopicTown from "../Components/TopicTown/TopicTown.jsx";
 
-function TopicTownView(props) {
+/*
+The TopicTownView component creates and displays multiple TopicTowns
+The TopicTowns are arranged in columns using React Bootstrap
+*/
+
+function TopicTownView() {
+  // TopicTownView has no props
   return (
     <div>
       <Container>

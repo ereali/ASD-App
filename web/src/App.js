@@ -8,7 +8,7 @@ import {
   useHistory,
 } from "react-router-dom";
 // UI Components
-import TopicTownView from "./TopicTownView";
+import TopicTownView from "./Views/TopicTownView";
 
 function App() {
   // const history = useHistory();
