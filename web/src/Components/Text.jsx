@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 function Text(props) {
   const Text = styled.text``;
-  return <Text></Text>;
+  return <p>{props.text}</p>;
 }
 
 export default Text;

@@ -46,9 +46,11 @@ function App() {
           <Route path="/">
             <Card>
               <div>
-                <Text>
-                  Please write the message that you would like your parents to
-                  be aware about!
+                <Text
+                  text="Please write the message that you would like your parents to 
+                be aware about!"
+                >
+                  {" "}
                 </Text>
               </div>
               <div>
