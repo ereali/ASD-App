@@ -4,6 +4,10 @@ import { Switch, Route, Link, useHistory } from "react-router-dom";
 import Button from "./Components/Button.jsx";
 import chat from "./chat-121.png"
 import trophy from "./trophy.png"
+import settings from "./Gear-Transparent.png"
+import checklist from "./checklist.png"
+import progress from "./progress-report.png"
+import question from "./question.png"
 function App() {
   // const history = useHistory();
   return (
@@ -13,7 +17,7 @@ function App() {
           <Navbar.Collapse>
             <Navbar.Brand href="#home">
               <img
-                alt="failed"
+                alt=""
                 src="./logo.svg"
                 width="30"
                 height="30"
@@ -55,7 +59,7 @@ function App() {
       <div>
       <Button
         //children="./logo"
-        color="#c5be81"
+        color="#6B9AC4"
         textColor="#c5be81"
         onClick={() => alert("test")}
         margin="10px 0px"
@@ -67,7 +71,7 @@ function App() {
       <Button
         //children="Color Pallete"
         onClick={() => alert("I've been clicked")}
-        color="#C08497"
+        color="#6B9AC4"
         textColor="#FFFFFF"
         margin="10px 0px"
         borderradius="16px"
@@ -79,48 +83,48 @@ function App() {
       <Button
         //children="Smaller"
         onClick={() => prompt("type a number in")}
-        color="#d31d1d"
+        color="#6B9AC4"
         textColor="#00000"
         margin="10px 0px"
         borderradius="16px"
         padding="5px 15px"
         height = "100px"
         width = "100px"
-      ></Button>
+      ><img src={progress}/></Button>
       <Button
         //children="Smaller"
         onClick={() => prompt("type a number in")}
-        color="#d31d1d"
+        color="#6B9AC4"
         textColor="#00000"
         margin="10px 0px"
         borderradius="16px"
         padding="5px 15px"
         height = "100px"
         width = "100px"
-      ></Button>
+      ><img src={checklist}/></Button>
       <div>
       <Button
         //children="Smaller"
         onClick={() => prompt("type a number in")}
-        color="#d31d1d"
+        color="#6B9AC4"
         textColor="#00000"
         margin="10px 0px"
         borderradius="16px"
         padding="5px 15px"
         height = "100px"
         width = "100px"
-      ></Button>
+      ><img src={settings}/></Button>
       <Button
         //children="Smaller"
         onClick={() => prompt("type a number in")}
-        color="#d31d1d"
+        color="#6B9AC4"
         textColor="#00000"
         margin="10px 0px"
         borderradius="16px"
         padding="5px 15px"
         height = "100px"
         width = "100px"
-      ></Button>
+      ><img src={question}/></Button>
       </div>
       </div>
 
