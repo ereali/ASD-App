@@ -1,7 +1,16 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { Navbar, Container, Nav, Card } from "react-bootstrap";
-import { Switch, Route, Link, useHistory } from "react-router-dom";
+import {
+  Switch,
+  Route,
+  BrowserRouter as Router,
+  Link,
+  useHistory,
+} from "react-router-dom";
+
+// UI Components
+import TopicTownView from "./Views/TopicTownView";
 import LessonPage from "./Pages/LessonPage";
 import sharingImage from "./sharing-info.png";
 import speechImage from "./speech.jpeg";
@@ -43,6 +52,10 @@ function App() {
           },
         ]}
       />
+      {
+        //  This TopicTownView displays 3 Topic Towns in two rows offset (labels are named within TopicTownView)
+        // <TopicTownView />
+      }
     </div>
   );
 }
