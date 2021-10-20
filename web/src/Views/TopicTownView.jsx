@@ -4,8 +4,8 @@ import TownImage from "../Resources/TopicTown/TownImage.svg";
 import TopicTown from "../Components/TopicTown/TopicTown.jsx";
 
 /*
-The TopicTownView component creates and displays multiple TopicTowns
-The TopicTowns are arranged in columns using React Bootstrap
+The TopicTownView component creates and displays a variable number of TopicTowns
+The TopicTowns are arranged in offset columns using React Bootstrap
 */
 
 function TopicTownView() {

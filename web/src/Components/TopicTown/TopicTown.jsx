@@ -5,7 +5,11 @@ import { Image } from "react-bootstrap";
 
 const TopicTown = (props) => {
   const { name, color, imageLink } = props;
-  // props are imageLink, labelText, onClick?
+  /*  TopicTown props are name (written on Label)
+      color (Label background color)
+      imageLink (link to town icon)
+      onClick (makes the entire TopicTown into a clickable button that leads to OnClick)
+  */
   return (
     <div>
       <Label
