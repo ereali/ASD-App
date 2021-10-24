@@ -1,4 +1,5 @@
 import { Button, Container, Row, Col, Image } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TownImage from "../Resources/TopicTown/TownImage.svg";
 import TopicTown from "../Components/TopicTown/TopicTown.jsx";
@@ -10,6 +11,7 @@ The TopicTowns are arranged in offset columns using React Bootstrap
 
 function TopicTownView() {
   // TopicTownView has no props
+
   return (
     <div>
       <Container>
@@ -19,6 +21,7 @@ function TopicTownView() {
               imageLink={TownImage}
               color="#6B9AC4"
               labelText="Public vs. Private"
+              url="public_vs_private"
             />
           </Col>
           <Col md={{ span: 2, offset: 6 }}>
@@ -26,6 +29,7 @@ function TopicTownView() {
               imageLink={TownImage}
               color="#6B9AC4"
               labelText="Body Changes"
+              url="body_changes"
             />
           </Col>
         </Row>
@@ -35,6 +39,7 @@ function TopicTownView() {
               imageLink={TownImage}
               color="#507255"
               labelText="Internet Safety"
+              url="internet_safety"
             />
           </Col>
         </Row>

@@ -1,7 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
-function Label(props) {
+const Label = (props) => {
+  const { name, backgroundColor, textColor, fontWeight } = props;
+  /*
+  Label props are name: the text displayed
+  backgroundColor: the color of the label
+  textColor: the color of the text displayed
+  fontWeight: the weight of the font, ex: bold
+  */
+
   const Label = styled.div`
     background-color: ${props.backgroundColor};
     color: ${props.textColor};
@@ -15,6 +23,6 @@ function Label(props) {
   `;
 
   return <Label>{props.name}</Label>;
-}
+};
 
 export default Label;
