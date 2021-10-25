@@ -11,7 +11,7 @@ import {
 
 // UI Components
 import TopicTownView from "./Views/TopicTownView";
-import LessonPage from "./Pages/LessonPage";
+import LessonPage from "./Views/LessonView";
 import sharingImage from "./sharing-info.png";
 import speechImage from "./speech.jpeg";
 
