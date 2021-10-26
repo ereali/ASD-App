@@ -19,7 +19,7 @@ import Settings from "./Views/Settings";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" backgroundColor="blue">
       <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Collapse>
@@ -31,7 +31,7 @@ function App() {
                 height="30"
                 className="d-inline-block align-top"
               />
-              I-CCEW SoBA 2021
+              ASD App
             </Navbar.Brand>
             <Nav className="me-auto">
               <Nav.Link>Home</Nav.Link>
