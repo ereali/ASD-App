@@ -6,6 +6,7 @@ import styled from "styled-components";
 import FourButtonModule from "./Components/fourbuttonquizmodule";
 import TrueFalseModule from "./Components/truefalsequizmodule";
 import QuizButton from "./Components/quizbutton";
+import ProgressBar from "./Components/progressbar";
 
 function App() {
   // const history = useHistory();
@@ -44,11 +45,7 @@ function App() {
               <Card.Body>Pricing Route</Card.Body>
             </Card>
           </Route>
-          <Route path="/">
-            <Card>
-              <Card.Body>Home Route</Card.Body>
-            </Card>
-          </Route>
+          <Route path="/"></Route>
         </Switch>
       </div>
       {/* <div>
@@ -61,6 +58,9 @@ function App() {
         <BackButton onClick={clickMe}>Back</BackButton>
       </div> */}
 
+      <div>
+        <ProgressBar now="100" />
+      </div>
       <Container classname="quiz">
         <div className="FourButtonModule">
           <QuizButton
