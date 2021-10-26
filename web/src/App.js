@@ -11,7 +11,7 @@ import ProgressBar from "./Components/progressbar";
 function App() {
   // const history = useHistory();
   return (
-    <div className="App">
+    <div className="App" backgroundColor="blue">
       <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Collapse>
@@ -48,18 +48,9 @@ function App() {
           <Route path="/"></Route>
         </Switch>
       </div>
-      {/* <div>
-        <SettingsButton onClick={clickMe}>Settings</SettingsButton>
-      </div>
-      <div>
-        <ChatButton onClick={clickMe}>Chat</ChatButton>
-      </div>
-      <div>
-        <BackButton onClick={clickMe}>Back</BackButton>
-      </div> */}
 
       <div>
-        <ProgressBar now="100" />
+        <ProgressBar now="75" />
       </div>
       <Container classname="quiz">
         <div className="FourButtonModule">
