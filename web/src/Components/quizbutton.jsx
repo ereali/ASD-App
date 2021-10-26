@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import { useHistory } from "react-router-dom";
 
 function QuizButton(props) {
+  const history = useHistory();
   const QuizButton = styled.div`
     name: ${props.name};
     background-color: ${props.backgroundColor};
@@ -23,7 +25,9 @@ function QuizButton(props) {
     }
   `;
 
-  return <QuizButton>{props.content}</QuizButton>;
+  return (
+    <QuizButton onClick={() => history.push(url)}>{props.content}</QuizButton>
+  );
 }
 
 export default QuizButton;
