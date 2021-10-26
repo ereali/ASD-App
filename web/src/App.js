@@ -15,6 +15,8 @@ import TopicTownView from "./Views/TopicTownView";
 import LessonView from "./Views/LessonView";
 import sharingImage from "./sharing-info.png";
 import speechImage from "./speech.jpeg";
+import HomeView from "./Views/HomeView";
+import Settings from "./Views/Settings";
 
 /*
 GUIDE TO ROUTING
