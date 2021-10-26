@@ -1,15 +1,23 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { Navbar, Container, Nav, Card } from "react-bootstrap";
-import { Switch, Route, Link, useHistory } from "react-router-dom";
-import styled from "styled-components";
-import FourButtonModule from "./Components/fourbuttonquizmodule";
-import TrueFalseModule from "./Components/truefalsequizmodule";
-import QuizButton from "./Components/quizbutton";
-import ProgressBar from "./Components/progressbar";
+import {
+  Switch,
+  Route,
+  BrowserRouter as Router,
+  Link,
+  useHistory,
+} from "react-router-dom";
+
+// UI Components
+import TopicTownView from "./Views/TopicTownView";
+import LessonPage from "./Views/LessonView";
+import sharingImage from "./sharing-info.png";
+import speechImage from "./speech.jpeg";
+import HomeView from "./Views/HomeView";
+import Settings from "./Views/Settings";
 
 function App() {
-  // const history = useHistory();
   return (
     <div className="App" backgroundColor="blue">
       <Navbar bg="dark" variant="dark">
@@ -33,51 +41,23 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <div>
-        <Switch>
-          <Route path="/features">
-            <Card>
-              <Card.Body>Features Route</Card.Body>
-            </Card>
-          </Route>
-          <Route path="/pricing">
-            <Card>
-              <Card.Body>Pricing Route</Card.Body>
-            </Card>
-          </Route>
-          <Route path="/"></Route>
-        </Switch>
-      </div>
-
-      <div>
-        <ProgressBar now="75" />
-      </div>
-      <Container classname="quiz">
-        <div className="FourButtonModule">
-          <QuizButton
-            name="quizlabel"
-            backgroundColor="#1B264F"
-            œ
-            textColor="#ffffff"
-            fontSize="30px"
-            hoverBackgroundColor="#101730"
-            content="Is sharing a photo of your face online ok?"
-          />
-        </div>
-        <div className="FourButtonModule">
-          <FourButtonModule
-            content1="Yes"
-            content2="Yes, only if you’ve known them for a few weeks"
-            content3="Yes, but only to people you know in real life"
-            content4="No"
-            backgroundColor="#507255"
-            textColor="#ffffff"
-            fontSize="25px"
-            hoverBackgroundColor="#324735"
-          />
-        </div>
-        <br></br>
-      </Container>
+      <LessonPage
+        lessonTitle="Public vs. Private"
+        lessonSubtitle="Which activities are okay in different places?"
+        backgroundColor="#6B9AC4"
+        modules={[
+          { label: "Things We Say", labelColor: "white", image: sharingImage },
+          {
+            label: "Public Places",
+            labelColor: "white",
+            image: speechImage,
+          },
+        ]}
+      />
+      {
+        //  This TopicTownView displays 3 Topic Towns in two rows offset (labels are named within TopicTownView)
+        // <TopicTownView />
+      }
     </div>
   );
 }
