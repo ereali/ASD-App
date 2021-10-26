@@ -37,6 +37,10 @@ function App() {
             <TopicTownView />
           </Route>
 
+          <Route path="/settings">
+            <Settings />
+          </Route>
+
           <Route path="/public_vs_private">
             <LessonView
               lessonTitle="Public vs. Private"
@@ -61,19 +65,10 @@ function App() {
           <Route path="/drag-and-drop-game" exact></Route>
           <Route path="/check-for-understanding" exact></Route>
           <Route path="/" exact>
-            {/* put Marcos's two button view here
-                parent button url="parent-portal" 
-                child button url="topic-towns 
-                remove TopicTownView after adding Marcos's view*/}
-            <TopicTownView />
+            <HomeView />
           </Route>
         </Switch>
       </Router>
-
-      {
-        //  This TopicTownView displays 3 Topic Towns in two rows offset (labels are named within TopicTownView)
-        // <TopicTownView />
-      }
     </div>
   );
 }
