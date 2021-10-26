@@ -58,9 +58,7 @@ const LessonModule = (props) => {
               <ModuleLabel className="text-center">{label}</ModuleLabel>
             </Col>
             <Col className="px-0">
-              <a href="#">
-                <PlayButton />
-              </a>
+              <PlayButton />
             </Col>
           </Row>
         </ModuleButton>
