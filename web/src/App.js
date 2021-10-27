@@ -17,6 +17,7 @@ import sharingImage from "./sharing-info.png";
 import speechImage from "./speech.jpeg";
 import HomeView from "./Views/HomeView";
 import Settings from "./Views/Settings";
+import QuizView from "./Views/quizview";
 
 /*
 GUIDE TO ROUTING
@@ -51,7 +52,7 @@ function App() {
                   label: "Things We Say",
                   labelColor: "white",
                   image: sharingImage,
-                  url: "/drag-and-drop-game",
+                  url: "/check-for-understanding",
                 },
                 {
                   label: "Public Places",
@@ -63,7 +64,9 @@ function App() {
             />
           </Route>
           <Route path="/drag-and-drop-game" exact></Route>
-          <Route path="/check-for-understanding" exact></Route>
+          <Route path="/check-for-understanding" exact>
+            <QuizView />
+          </Route>
           <Route path="/" exact>
             <HomeView />
           </Route>
