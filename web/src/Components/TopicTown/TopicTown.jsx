@@ -1,18 +1,26 @@
 import React from "react";
-import styled from "styled-components";
-import Label from "./Label.jsx";
+import { useHistory } from "react-router-dom";
 import { Image } from "react-bootstrap";
+import Label from "./Label.jsx";
 
 const TopicTown = (props) => {
-  const { name, color, imageLink } = props;
-  // props are imageLink, labelText, onClick?
+  const { name, color, imageLink, url } = props;
+  /*  
+  TopicTown props are name: text displayed on Label
+  color: Label background color
+  imageLink: link to town icon to display under Label
+  url: the url used in routing
+  */
+
+  const history = useHistory();
+
   return (
-    <div>
+    <div onClick={() => history.push(url)}>
       <Label
         name={props.labelText}
         backgroundColor={props.color}
-        textColor="white"
-        fontWeight="bold"
+        textColor="white" // Text color is not changeable. Every TopicTown Label has white text color
+        fontWeight="bold" // Font weight is not changeable. Every TopicTown Label has bold font weight
       />
       <Image src={props.imageLink} />
     </div>

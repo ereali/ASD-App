@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { Container, Row } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 import LessonModule from "../Components/LessonModule";
 
-const LessonPage = (props) => {
+const LessonView = (props) => {
   const { lessonTitle, lessonSubtitle, backgroundColor, modules } = props;
   const LessonContainer = styled.div`
     background-color: ${backgroundColor};
@@ -15,6 +16,7 @@ const LessonPage = (props) => {
 
   const Subtitle = styled.h4``;
 
+  const history = useHistory();
   return (
     <LessonContainer>
       <Container>
@@ -33,9 +35,7 @@ const LessonPage = (props) => {
               labelColor={module.labelColor}
               image={module.image}
               // Replace link with routing
-              onClick={() =>
-                window.location.replace("http://stackoverflow.com")
-              }
+              onClick={() => history.push(module.url)}
               backgroundColor="#488B49"
             />
           </Row>
@@ -45,4 +45,4 @@ const LessonPage = (props) => {
   );
 };
 
-export default LessonPage;
+export default LessonView;
