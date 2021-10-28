@@ -7,6 +7,7 @@ import styled from "styled-components";
 import BuildingIcon from "../Resources/TopicTown/BuildingIcon.svg";
 import BusIcon from "../Resources/TopicTown/BusIcon.svg";
 import MarketIcon from "../Resources/TopicTown/MarketIcon.svg";
+import TopicTownBackground from "../Resources/TopicTown/TopicTownBackground.png";
 
 /*
 The TopicTownView component creates and displays a variable number of TopicTowns
@@ -17,8 +18,11 @@ function TopicTownView() {
   // TopicTownView has no props
 
   const TopicTownPage = styled.div`
-    background-color: #6b9ac4;
+    padding-top: 1%;
     height: 100%;
+    background-image: url(${TopicTownBackground});
+    background-color: #6b9ac4;
+    background-size: 100% 100%;
   `;
 
   return (

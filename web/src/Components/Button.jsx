@@ -4,9 +4,9 @@ import styled from "styled-components";
 function Button(props) {
   const Button = styled.button`
     background-color: ${props.color};
-    borderradius: radius;
+    border-radius: ${props.radius};
     color: ${props.textColor};
-    transition: ease background-color 250ms;
+    transition: ease 250ms;
     &:hover {
       //background-color: #cf75c5;    //thx edward
       filter: brightness(1.4);
@@ -14,7 +14,7 @@ function Button(props) {
     }
     height: ${props.height};
     width: ${props.width};
-    margin: $(props.margin);
+    margin: ${props.margin};
     border-radius: ${props.borderradius};
     font-size: ${props.fontsize};
   `;
