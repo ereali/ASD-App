@@ -3,7 +3,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import { ReactComponent as PlayButtonSVG } from "../button.svg";
 
 const PlayButton = styled(PlayButtonSVG)`
-  width: 50px;
+  width: 3vw;
   transition: opacity 400ms;
   &:hover {
     opacity: 0.8;
@@ -20,8 +20,9 @@ const LessonModule = (props) => {
   const { label, image, backgroundColor, labelColor, onClick } = props;
   const ModuleButton = styled.button`
     background: ${backgroundColor};
-    border-radius: 20px;
-    width: 250px;
+    border-radius: 1vw;
+    width: 20vw;
+    height: 20vw;
     border-style: outset;
     padding: 0;
     border: none;
@@ -31,15 +32,15 @@ const LessonModule = (props) => {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 23px;
-    line-height: 28px;
+    font-size: 2vw;
+    line-height: 2vw;
     color: ${labelColor};
     justify-content: center;
     text-align: center;
   `;
 
   const ModuleImage = styled(Image)`
-    height: 175px;
+    height: 15vw;
     object-fit: stretch;
     border-radius: 20px;
     width: 85%;

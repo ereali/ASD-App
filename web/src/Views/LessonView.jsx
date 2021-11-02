@@ -12,14 +12,17 @@ const LessonView = (props) => {
 
   const Title = styled.h1`
     color: white;
+    font-size: 3vw;
   `;
 
-  const Subtitle = styled.h4``;
+  const Subtitle = styled.h4`
+    font-size: 2vw;
+  `;
 
   const history = useHistory();
   return (
     <LessonContainer>
-      <Container>
+      <Container fluid>
         <Row>
           {/* <BackButton /> */}
           <Title className="text-center">{lessonTitle}</Title>

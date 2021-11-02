@@ -11,7 +11,7 @@ function QuizButton(props) {
     padding: 5px 15px;
     border-radius: 17px;
     outline: 0;
-    margin: 10px 0px;
+    margin: 1vw 0px;
     cursor: pointer;
     box-shadow: 0px 2px 2px lightgray;
     transition: ease background-color 250ms;

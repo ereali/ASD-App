@@ -14,13 +14,17 @@ function QuizView(props) {
     height: 100%;
   `;
 
+  const ProgressBarContainer = styled.div`
+    height: 2vw;
+  `;
+
   return (
     <QuizPage>
-      <Container classname="quiz">
+      <Container classname="quiz" fluid>
         <br />
-        <div>
-          <ProgressBar now="75" />
-        </div>
+        <ProgressBarContainer>
+          <ProgressBar now="75" style={{ height: "1vw" }} />
+        </ProgressBarContainer>
         <br />
         <div className="FourButtonModule">
           <QuizButton
@@ -28,7 +32,7 @@ function QuizView(props) {
             backgroundColor="#1B264F"
             œ
             textColor="#ffffff"
-            fontSize="30px"
+            fontSize="3vw"
             hoverBackgroundColor="#101730"
             content="Is sharing a photo of your face online ok?"
           />
@@ -41,7 +45,7 @@ function QuizView(props) {
             content4="No"
             backgroundColor="#507255"
             textColor="#ffffff"
-            fontSize="25px"
+            fontSize="2vw"
             hoverBackgroundColor="#324735"
           />
         </div>
@@ -49,7 +53,7 @@ function QuizView(props) {
           name="backButton"
           backgroundColor="#1B264F"
           textColor="#ffffff"
-          fontSize="30px"
+          fontSize="2vw"
           hoverBackgroundColor="#101730"
           content="Back"
           url="/topic-towns"

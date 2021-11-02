@@ -21,10 +21,10 @@ function HomeView() {
             <Button
               color="#488B49"
               onClick={() => history.push("/topic-towns")} //start
-              height="450px"
-              width="550px"
+              height="30vw"
+              width="35vw"
               children="Play"
-              fontsize="5em"
+              fontsize="4vw"
               margin="10px 0px"
               borderradius="16px"
               padding="5px 15px"
@@ -35,10 +35,10 @@ function HomeView() {
             <Button
               color="#274790"
               onClick={() => history.push("/settings")} //settings
-              height="450px"
-              width="550px"
+              height="30vw"
+              width="35vw"
               children="Parent Portal"
-              fontsize="5em"
+              fontsize="4vw"
               margin="10px 0px"
               borderradius="16px"
               padding="5px 15px"

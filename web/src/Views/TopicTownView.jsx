@@ -7,7 +7,7 @@ import styled from "styled-components";
 import BuildingIcon from "../Resources/TopicTown/BuildingIcon.svg";
 import BusIcon from "../Resources/TopicTown/BusIcon.svg";
 import MarketIcon from "../Resources/TopicTown/MarketIcon.svg";
-import TopicTownBackground from "../Resources/TopicTown/TopicTownBackground.png";
+import TopicTownBackground from "../Resources/TopicTown/TopicTownBackground2.png";
 
 /*
 The TopicTownView component creates and displays a variable number of TopicTowns
@@ -27,7 +27,7 @@ function TopicTownView() {
 
   return (
     <TopicTownPage>
-      <Container>
+      <Container fluid>
         <Row>
           <Col md={2}>
             <TopicTown
