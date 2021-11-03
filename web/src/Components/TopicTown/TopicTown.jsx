@@ -20,7 +20,7 @@ const TopicTown = (props) => {
         name={props.labelText}
         backgroundColor={props.color}
         textColor="white" // Text color is not changeable. Every TopicTown Label has white text color
-        fontWeight="normal" // Font weight is not changeable. Every TopicTown Label has bold font weight
+        fontWeight="normal"
         fontSize="2.5vw"
       />
       <Image style={{ width: "100%" }} src={props.imageLink} />
