@@ -4,9 +4,11 @@ import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 function HomeView() {
   const HomePage = styled.div`
-    background-color: #578CE8;
-    height = 100%;
-    `;
+    background-color: #6b9ac4;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  `;
 
   const history = useHistory();
 
@@ -17,28 +19,30 @@ function HomeView() {
         <Row>
           <Col>
             <Button
-              color="#1FB52F"
+              color="#488B49"
               onClick={() => history.push("/topic-towns")} //start
-              height="450px"
-              width="550px"
+              height="30vw"
+              width="35vw"
               children="Play"
-              fontsize="5em"
+              fontsize="4vw"
               margin="10px 0px"
               borderradius="16px"
               padding="5px 15px"
+              textColor="white"
             ></Button>
           </Col>
           <Col>
             <Button
-              color="#BFD00C"
+              color="#274790"
               onClick={() => history.push("/settings")} //settings
-              height="450px"
-              width="550px"
+              height="30vw"
+              width="35vw"
               children="Parent Portal"
-              fontsize="5em"
+              fontsize="4vw"
               margin="10px 0px"
               borderradius="16px"
               padding="5px 15px"
+              textColor="white"
             ></Button>
           </Col>
         </Row>

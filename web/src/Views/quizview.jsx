@@ -9,47 +9,58 @@ import QuizButton from "../Components/quizbutton";
 import ProgressBar from "../Components/progressbar";
 
 function QuizView(props) {
+  const QuizPage = styled.div`
+    background-color: #6b9ac4;
+    height: 100%;
+  `;
+
+  const ProgressBarContainer = styled.div`
+    height: 2vw;
+  `;
+
   return (
-    <Container classname="quiz">
-      <br />
-      <div>
-        <ProgressBar now="75" />
-      </div>
-      <br />
-      <div className="FourButtonModule">
+    <QuizPage>
+      <Container classname="quiz" fluid>
+        <br />
+        <ProgressBarContainer>
+          <ProgressBar now="75" style={{ height: "1vw" }} />
+        </ProgressBarContainer>
+        <br />
+        <div className="FourButtonModule">
+          <QuizButton
+            name="quizlabel"
+            backgroundColor="#1B264F"
+            œ
+            textColor="#ffffff"
+            fontSize="3vw"
+            hoverBackgroundColor="#101730"
+            content="Is sharing a photo of your face online ok?"
+          />
+        </div>
+        <div className="FourButtonModule">
+          <FourButtonModule
+            content1="Yes"
+            content2="Yes, only if you’ve known them for a few weeks"
+            content3="Yes, but only to people you know in real life"
+            content4="No"
+            backgroundColor="#507255"
+            textColor="#ffffff"
+            fontSize="2vw"
+            hoverBackgroundColor="#324735"
+          />
+        </div>
         <QuizButton
-          name="quizlabel"
+          name="backButton"
           backgroundColor="#1B264F"
-          œ
           textColor="#ffffff"
-          fontSize="30px"
+          fontSize="2vw"
           hoverBackgroundColor="#101730"
-          content="Is sharing a photo of your face online ok?"
+          content="Back"
+          url="/topic-towns"
         />
-      </div>
-      <div className="FourButtonModule">
-        <FourButtonModule
-          content1="Yes"
-          content2="Yes, only if you’ve known them for a few weeks"
-          content3="Yes, but only to people you know in real life"
-          content4="No"
-          backgroundColor="#507255"
-          textColor="#ffffff"
-          fontSize="25px"
-          hoverBackgroundColor="#324735"
-        />
-      </div>
-      <QuizButton
-        name="backButton"
-        backgroundColor="#1B264F"
-        textColor="#ffffff"
-        fontSize="30px"
-        hoverBackgroundColor="#101730"
-        content="Back"
-        url="/topic-towns"
-      />
-      <br></br>
-    </Container>
+        <br></br>
+      </Container>
+    </QuizPage>
   );
 }
 

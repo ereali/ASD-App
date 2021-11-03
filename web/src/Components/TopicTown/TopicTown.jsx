@@ -15,14 +15,15 @@ const TopicTown = (props) => {
   const history = useHistory();
 
   return (
-    <div onClick={() => history.push(url)}>
+    <div style={{ cursor: "pointer" }} onClick={() => history.push(url)}>
       <Label
         name={props.labelText}
         backgroundColor={props.color}
         textColor="white" // Text color is not changeable. Every TopicTown Label has white text color
         fontWeight="bold" // Font weight is not changeable. Every TopicTown Label has bold font weight
+        fontSize="2.5vw"
       />
-      <Image src={props.imageLink} />
+      <Image style={{ width: "100%" }} src={props.imageLink} />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Label = (props) => {
-  const { name, backgroundColor, textColor, fontWeight } = props;
+  const { name, backgroundColor, textColor, fontWeight, fontSize } = props;
   /*
   Label props are name: the text displayed
   backgroundColor: the color of the label
@@ -18,7 +18,7 @@ const Label = (props) => {
     vertical-align: center;
     display: inline-block;
     padding: 15px;
-    font-size: 35px;
+    font-size: ${props.fontSize};
     margin: auto;
   `;
 
