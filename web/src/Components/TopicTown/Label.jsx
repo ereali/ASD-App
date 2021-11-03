@@ -11,18 +11,19 @@ const Label = (props) => {
   */
 
   const Label = styled.div`
-    background-color: ${props.backgroundColor};
-    color: ${props.textColor};
+    background-color: ${backgroundColor};
+    color: ${textColor};
     border-radius: 17px;
     text-align: center;
     vertical-align: center;
     display: inline-block;
     padding: 15px;
-    font-size: ${props.fontSize};
+    font-size: ${fontSize};
+    font-weight: ${fontWeight};
     margin: auto;
   `;
 
-  return <Label>{props.name}</Label>;
+  return <Label>{name}</Label>;
 };
 
 export default Label;

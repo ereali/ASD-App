@@ -34,7 +34,7 @@ function TopicTownView() {
               imageLink={BuildingIcon}
               color="#488B49"
               labelText="Public vs. Private"
-              url="/public_vs_private"
+              url="/public-vs-private"
             />
           </Col>
           <Col md={{ span: 2, offset: 8 }}>
@@ -42,7 +42,7 @@ function TopicTownView() {
               imageLink={BusIcon}
               color="#488B49"
               labelText="Body Changes"
-              url="/body_changes"
+              url="/body-changes"
             />
           </Col>
         </Row>
@@ -52,7 +52,7 @@ function TopicTownView() {
               imageLink={MarketIcon}
               color="#488B49"
               labelText="Internet Safety"
-              url="/internet_safety"
+              url="/internet-safety"
             />
           </Col>
         </Row>
