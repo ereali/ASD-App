@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <title>SCHOOL</title>
+  <g>
+    <g>
+      <rect x="63.84" y="19" width="10.287" height="5.78" fill="#ffad5a"/>
+      <rect x="87.84" y="56.452" width="21" height="52.548" fill="#ffad5a"/>
+      <polygon points="63.84 32 39.84 48.989 39.84 109 87.84 109 87.84 48.989 63.84 32" fill="#f9d16e"/>
+      <rect x="65.368" y="88.333" width="10.435" height="20.667" fill="#fff8e3"/>
+      <rect x="51.877" y="88.333" width="10.435" height="20.667" fill="#fff8e3"/>
+      <rect x="51.877" y="81.462" width="23.926" height="6.872" fill="#f7963e"/>
+      <rect x="95.155" y="77.117" width="6.37" height="6.37" fill="#fff8e3"/>
+      <rect x="95.155" y="93.42" width="6.37" height="6.37" fill="#fff8e3"/>
+      <rect x="18.84" y="56.452" width="21" height="52.548" fill="#ffad5a"/>
+      <rect x="87.84" y="56.452" width="21" height="8.876" fill="#f7963e"/>
+      <rect x="18.84" y="56.452" width="21" height="8.876" fill="#f7963e"/>
+      <rect x="26.155" y="77.117" width="6.37" height="6.37" fill="#fff8e3"/>
+      <rect x="26.155" y="93.42" width="6.37" height="6.37" fill="#fff8e3"/>
+      <path d="M63.84,33.75A1.751,1.751,0,0,1,62.09,32V19a1.75,1.75,0,0,1,3.5,0V32A1.751,1.751,0,0,1,63.84,33.75Z" fill="#4f9da6"/>
+      <circle cx="63.84" cy="60.89" r="7.724" fill="#fff8e3"/>
+    </g>
+    <path d="M108.84,110.75h-90a1.75,1.75,0,0,1,0-3.5h90a1.75,1.75,0,0,1,0,3.5Z" fill="#2d1f5e"/>
+  </g>
+</svg>

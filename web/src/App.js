@@ -11,13 +11,16 @@ import {
 } from "react-router-dom";
 
 // UI Components
+import HomeView from "./Views/HomeView";
 import TopicTownView from "./Views/TopicTownView";
 import LessonView from "./Views/LessonView";
-import sharingImage from "./sharing-info.png";
-import speechImage from "./speech.jpeg";
-import HomeView from "./Views/HomeView";
 import Settings from "./Views/Settings";
 import QuizView from "./Views/quizview";
+import PublicPrivateContentView from "./Views/PublicPrivateContentView";
+
+// Assets
+import sharingImage from "./sharing-info.png";
+import speechImage from "./speech.jpeg";
 
 /*
 GUIDE TO ROUTING
@@ -42,28 +45,31 @@ function App() {
             <Settings />
           </Route>
 
-          <Route path="/public_vs_private">
+          <Route path="/public-vs-private">
             <LessonView
               lessonTitle="Public vs. Private"
               lessonSubtitle="Which activities are okay in different places?"
               backgroundColor="#6B9AC4"
               modules={[
                 {
+                  label: "Places",
+                  labelColor: "white",
+                  image: speechImage,
+                  url: "/public-private-content",
+                },
+                {
                   label: "Things We Say",
                   labelColor: "white",
                   image: sharingImage,
                   url: "/check-for-understanding",
                 },
-                {
-                  label: "Public Places",
-                  labelColor: "white",
-                  image: speechImage,
-                  url: "/test-game",
-                },
               ]}
             />
           </Route>
           <Route path="/drag-and-drop-game" exact></Route>
+          <Route path="/public-private-content" exact>
+            <PublicPrivateContentView message="Click a place to visit it!" />
+          </Route>
           <Route path="/check-for-understanding" exact>
             <QuizView />
           </Route>
