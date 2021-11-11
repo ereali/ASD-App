@@ -4,10 +4,12 @@ import styled from "styled-components";
 const Label = (props) => {
   const { name, backgroundColor, textColor, fontWeight, fontSize } = props;
   /*
-  Label props are name: the text displayed
+  Label props are 
+  name: the text displayed
   backgroundColor: the color of the label
   textColor: the color of the text displayed
   fontWeight: the weight of the font, ex: bold
+  fontSize: the size of the text displayed
   */
 
   const Label = styled.div`
