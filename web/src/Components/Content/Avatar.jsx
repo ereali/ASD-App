@@ -5,7 +5,7 @@ function Avatar(props) {
     position: absolute;
     height: 12vw;
     left: ${props.positionLeft};
-    opacity: 0;
+    opacity: ${props.opacity};
   `;
 
   return <AvatarPage src={props.src}></AvatarPage>;
