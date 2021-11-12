@@ -1,22 +1,20 @@
-import {CATEGORY, ANSWERS} from "..Components/dnddata.jsx";
-import {shuffle, STATE,move} from "..Components/shuffle.jsx"
+import { CATEGORY, ANSWERS } from "..Components/DND/dnddata.jsx";
+import { shuffle, STATE, move } from "..Components/DND/shuffle.jsx";
 
-
-
-import React from 'react';
-import { DragDropContext } from 'react-beautiful-dnd';
-import Modal from '../Components/Modal';
-import Header from '../Components/Header';
-import Dropzone from '../Components/Dropzone';
-import Footer from '../Components/Footer';
+import React from "react";
+import { DragDropContext } from "react-beautiful-dnd";
+import Modal from "../Components/DND/Modal";
+import Header from "../Components/DND/Header";
+import Dropzone from "../Components/DND/Dropzone";
+import Footer from "../Components/DND/Footer";
 
 const GAME_DURATION = 1000 * 30; // 30 seconds
 
 const initial = {
-    bench: shuffle(ANSWERS),
-    [CATEGORY.PUBLIC]:[],
-    [CATEGORY.PRIVATE]:[],
-    gameState: STATE.READY,
+  bench: shuffle(ANSWERS),
+  [CATEGORY.PUBLIC]: [],
+  [CATEGORY.PRIVATE]: [],
+  gameState: STATE.READY,
 };
 
 class dndgame extends React.Component {
@@ -34,7 +32,7 @@ class dndgame extends React.Component {
   };
 
   //gameLoop = () => {
-    //this.timer = setInterval(1000);
+  //this.timer = setInterval(1000);
   //};
 
   endGame = () => {
@@ -52,7 +50,7 @@ class dndgame extends React.Component {
       return;
     }
 
-    this.setState(state => {
+    this.setState((state) => {
       return move(state, source, destination);
     });
   };
@@ -63,7 +61,7 @@ class dndgame extends React.Component {
 
     return (
       <>
-        <Header gameState={gameState}  endGame={this.endGame} />
+        <Header gameState={gameState} endGame={this.endGame} />
         {this.state.gameState !== STATE.PLAYING && (
           <Modal
             startGame={this.startGame}
@@ -82,7 +80,11 @@ class dndgame extends React.Component {
                   answers={this.state[CATEGORY.PUBLIC]}
                   isDropDisabled={isDropDisabled}
                 />
-                <Dropzone id="bench" answers={bench} isDropDisabled={isDropDisabled} />
+                <Dropzone
+                  id="bench"
+                  answers={bench}
+                  isDropDisabled={isDropDisabled}
+                />
                 <Dropzone
                   id={CATEGORY.PRIVATE}
                   answers={this.state[CATEGORY.PRIVATE]}
@@ -96,12 +98,7 @@ class dndgame extends React.Component {
       </>
     );
   }
-
-  
-  
-  
 }
 
 export default dndgame;
 //move to view
-
