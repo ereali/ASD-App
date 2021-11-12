@@ -3,18 +3,20 @@
 import React from "react";
 import { Droppable, Draggable } from "react-beautiful-dnd";
 
-const Dropzone = ({ isDropDisabled, answers, id }) => (
+import eatingasandwich from "../../Resources/DND/eatingasandwich.png";
+
+const Dropzone = ({ isDropDisabled, heroes, id }) => (
   <div className="column col-4">
     <div className="divider" data-content={id.toUpperCase()} />
     <Droppable droppableId={id} isDropDisabled={isDropDisabled}>
       {(provided) => {
         return (
           <div
-            className="menu answer-list"
+            className="menu hero-list"
             {...provided.droppableProps}
             ref={provided.innerRef}
           >
-            {answers.map(({ name }, index) => (
+            {heroes.map(({ name }, index) => (
               <Hero key={name} name={name} index={index} />
             ))}
             {provided.placeholder}
@@ -25,7 +27,7 @@ const Dropzone = ({ isDropDisabled, answers, id }) => (
   </div>
 );
 
-const Answer = ({ name, index }) => (
+const Hero = ({ name, index }) => (
   <Draggable key={name} draggableId={name} index={index}>
     {(provided) => {
       return (
@@ -39,10 +41,7 @@ const Answer = ({ name, index }) => (
             style={{ backgroundColor: "transparent" }}
             className="avatar tile-icon"
           >
-            <img
-              src={`./hero_icons/${name.toLowerCase().replace(" ", "-")}.svg`}
-              alt={name}
-            />
+            <img src={eatingasandwich} alt={name} />
           </figure>
           <div className="tile-content">{name}</div>
         </div>

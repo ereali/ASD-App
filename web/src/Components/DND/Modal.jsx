@@ -1,22 +1,20 @@
 import React from "react";
 
-import { GAME_STATE, getTotalScore } from "../custom/utils";
+import { GAME_STATE, getTotalScore } from "./utils";
 
 const Modal = ({ gameState, groups, startGame, timeLeft, resetGame }) => (
   <div className="modal modal-sm active">
     <div className="modal-overlay" />
     <div className="modal-container">
       <div className="modal-header">
-        <div className="modal-title h4">
-          Select the correct answers for each category
-        </div>
+        <div className="modal-title h4">Sort the Activities</div>
       </div>
       <div className="modal-body">
         <div className="content h6">
           {" "}
           {gameState === GAME_STATE.READY
-            ? `Drag and Drop the answers into the public or private category...`
-            : `You scored - ${getTotalScore(groups, timeLeft)}`}
+            ? `Drag and Drop the public or private items in the correct list, sort them alphabetically and quickly for better score...`
+            : `You scored: ${getTotalScore(groups, timeLeft)} points`}
         </div>
       </div>
       <div className="modal-footer">
@@ -30,5 +28,4 @@ const Modal = ({ gameState, groups, startGame, timeLeft, resetGame }) => (
     </div>
   </div>
 );
-
 export default Modal;

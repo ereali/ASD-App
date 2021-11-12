@@ -1,47 +1,47 @@
-export const CATEGORY = {
-  PUBLIC: "public",
-  PRIVATE: "private",
+export const COMICS = {
+  DC: "public",
+  MARVEL: "private",
 };
 
-export const ANSWERS = [
+export const HEROES = [
   {
-    answer: "Eating a sandwich",
-    category: "public",
+    name: "Eating a sandwich",
+    comics: "public",
   },
   {
-    answer: "Reading a book",
-    category: "public",
+    name: "Reading a book",
+    comics: "public",
   },
   {
-    answer: "Taking a walk",
-    category: "public",
+    name: "Taking a walk",
+    comics: "public",
   },
   {
-    answer: "Giving someone a high five",
-    category: "public",
+    name: "Giving someone a high five",
+    comics: "public",
   },
   {
-    answer: "Talking to a friend",
-    category: "public",
+    name: "Talking to a friend",
+    comics: "public",
   },
   {
-    answer: "Using the toilet",
-    category: "private",
+    name: "Using the toilet",
+    comics: "private",
   },
   {
-    answer: "Putting on deodorant",
-    category: "private",
+    name: "Putting on deodorant",
+    comics: "private",
   },
   {
-    answer: "Taking off clothes",
-    category: "private",
+    name: "Taking off clothes",
+    comics: "private",
   },
   {
-    answer: "Taking a shower",
-    category: "private",
+    name: "Taking a shower",
+    comics: "private",
   },
   {
-    answer: "Touching your private parts",
-    category: "private",
+    name: "Touching your private parts",
+    comics: "private",
   },
 ];

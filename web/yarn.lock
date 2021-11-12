@@ -10748,6 +10748,11 @@
     "select-hose" "^2.0.0"
     "spdy-transport" "^3.0.0"
 
+"spectre.css@^0.5.9":
+  "integrity" "sha512-9jUqwZmCnvflrxFGcK+ize43TvjwDjqMwZPVubEtSIHzvinH0TBUESm1LcOJx3Ur7bdPaeOHQIjOqBl1Y5kLFw=="
+  "resolved" "https://registry.npmjs.org/spectre.css/-/spectre.css-0.5.9.tgz"
+  "version" "0.5.9"
+
 "split-string@^3.0.1", "split-string@^3.0.2":
   "integrity" "sha512-NzNVhJDYpwceVVii8/Hu6DKfD2G+NrQHlS/V/qgv763EYudVwEcMQNxd2lh+0VrUByXN/oJkl5grOhYWvQUYiw=="
   "resolved" "https://registry.npmjs.org/split-string/-/split-string-3.1.0.tgz"
