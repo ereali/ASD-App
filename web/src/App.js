@@ -71,7 +71,6 @@ function App() {
               ]}
             />
           </Route>
-          <Route path="/drag-and-drop-game" exact></Route>
           <Route path="/public-private-content" exact>
             <PublicPrivateContentView message="Click a place to visit it!" />
           </Route>

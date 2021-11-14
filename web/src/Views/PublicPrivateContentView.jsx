@@ -73,7 +73,7 @@ function PublicPrivateContentView(props) {
           textColor="white"
           fontsize="2vw"
           padding="10px"
-          onClick={() => history.push("/drag-and-drop-game")}
+          onClick={() => history.push("/dndgame")}
         ></Button>
       </div>
 
