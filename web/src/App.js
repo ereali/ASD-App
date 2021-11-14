@@ -17,6 +17,7 @@ import LessonView from "./Views/LessonView";
 import Settings from "./Views/Settings";
 import QuizView from "./Views/quizview";
 import PublicPrivateContentView from "./Views/PublicPrivateContentView";
+import DNDGame from "./Views/dndgame";
 
 // Assets
 import sharingImage from "./sharing-info.png";
@@ -43,6 +44,10 @@ function App() {
 
           <Route path="/settings">
             <Settings />
+          </Route>
+
+          <Route path="/dndgame">
+            <DNDGame />
           </Route>
 
           <Route path="/public-vs-private">
