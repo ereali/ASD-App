@@ -7,7 +7,6 @@ const LessonView = (props) => {
   const { lessonTitle, lessonSubtitle, backgroundColor, modules } = props;
   const LessonContainer = styled.div`
     background-color: ${backgroundColor};
-    height: 100%;
   `;
 
   const Title = styled.h1`
@@ -22,7 +21,7 @@ const LessonView = (props) => {
   const history = useHistory();
   return (
     <LessonContainer>
-      <Container fluid>
+      <Container>
         <Row>
           {/* <BackButton /> */}
           <Title className="text-center">{lessonTitle}</Title>

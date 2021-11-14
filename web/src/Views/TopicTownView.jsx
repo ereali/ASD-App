@@ -19,15 +19,13 @@ function TopicTownView() {
 
   const TopicTownPage = styled.div`
     padding-top: 1%;
-    height: 100%;
-    background-image: url(${TopicTownBackground});
     background-color: #6b9ac4;
-    background-size: 100% 100%;
+    height: 100%;
   `;
 
   return (
     <TopicTownPage>
-      <Container fluid>
+      <Container>
         <Row>
           <Col md={2}>
             <TopicTown
