@@ -18,22 +18,15 @@ import Settings from "./Views/Settings";
 import QuizView from "./Views/quizview";
 import PublicPrivateContentView from "./Views/PublicPrivateContentView";
 import DNDGame from "./Views/dndgame";
+import Button from "./Components/Button";
 
 // Assets
 import sharingImage from "./sharing-info.png";
 import speechImage from "./speech.jpeg";
 
-/*
-GUIDE TO ROUTING
-
-1 import { useHistory } from "react-router-dom";  (in your component file)
-2 add a url prop to your component matching a Route path
-3 onClick={() => history.goBack() (for a back button) 
-4 onClick={() => history.push(url)) (for a button that routes to the url prop)
-
-*/
-
 function App() {
+  const history = useHistory();
+
   return (
     <div className="App">
       <Router>

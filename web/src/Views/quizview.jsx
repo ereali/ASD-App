@@ -34,15 +34,15 @@ function QuizView(props) {
             textColor="#ffffff"
             fontSize="3vw"
             hoverBackgroundColor="#101730"
-            content="Is sharing a photo of your face online ok?"
+            content="Which of these places are private?"
           />
         </div>
         <div className="FourButtonModule">
           <FourButtonModule
-            content1="Yes"
-            content2="Yes, only if you’ve known them for a few weeks"
-            content3="Yes, but only to people you know in real life"
-            content4="No"
+            content1="The library"
+            content2="The park"
+            content3="Your bathroom"
+            content4="The school"
             backgroundColor="#507255"
             textColor="#ffffff"
             fontSize="2vw"
