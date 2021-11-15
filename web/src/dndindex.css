@@ -1,10 +1,14 @@
 header.navbar {
-  height: 40px;
-  margin: 5px 20px;
+  height: 60px;
+  background-color: #6b9ac4;
 }
 
 div.menu .menu-item.tile.tile-centered {
   margin-top: 5px;
+}
+
+header.example {
+  color: #ffffff;
 }
 
 .menu.hero-list {
@@ -17,4 +21,9 @@ footer {
   position: fixed;
   bottom: 0;
   font-size: 14px;
+}
+
+.navbar-center text-error {
+  color: #ffffff;
+  font-size: 24pt;
 }

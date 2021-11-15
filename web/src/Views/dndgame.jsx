@@ -1,5 +1,5 @@
 import "spectre.css";
-import "../index.css";
+import "../dndindex.css";
 
 import React from "react";
 import { DragDropContext } from "react-beautiful-dnd";
