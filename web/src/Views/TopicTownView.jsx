@@ -40,7 +40,7 @@ function TopicTownView() {
               imageLink={BusIcon}
               color="#488B49"
               labelText="Body Changes"
-              url="/body-changes"
+              url="/under-development"
             />
           </Col>
         </Row>
@@ -50,7 +50,7 @@ function TopicTownView() {
               imageLink={MarketIcon}
               color="#488B49"
               labelText="Internet Safety"
-              url="/internet-safety"
+              url="/under-development"
             />
           </Col>
         </Row>

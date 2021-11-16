@@ -25,9 +25,7 @@ function QuizButton(props) {
     }
   `;
 
-  return (
-    <QuizButton onClick={() => history.goBack()}>{props.content}</QuizButton>
-  );
+  return <QuizButton>{props.content}</QuizButton>;
 }
 
 export default QuizButton;

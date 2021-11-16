@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { Navbar, Container, Nav, Card } from "react-bootstrap";
-import TestView1 from "./Views/TestView1";
+import UnderDevelopmentView from "./Views/UnderDevelopmentView";
 import {
   Switch,
   Route,
@@ -18,7 +18,6 @@ import Settings from "./Views/Settings";
 import QuizView from "./Views/quizview";
 import PublicPrivateContentView from "./Views/PublicPrivateContentView";
 import DNDGame from "./Views/dndgame";
-import Button from "./Components/Button";
 
 // Assets
 import sharingImage from "./sharing-info.png";
@@ -59,7 +58,7 @@ function App() {
                   label: "Things We Say",
                   labelColor: "white",
                   image: sharingImage,
-                  url: "/check-for-understanding",
+                  url: "/under-development",
                 },
               ]}
             />
@@ -72,6 +71,9 @@ function App() {
           </Route>
           <Route path="/" exact>
             <HomeView />
+          </Route>
+          <Route path="/under-development">
+            <UnderDevelopmentView />
           </Route>
         </Switch>
       </Router>

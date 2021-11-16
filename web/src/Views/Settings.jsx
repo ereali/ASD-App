@@ -25,7 +25,7 @@ function Settings() {
               //children="./logo"
               color="#488B49"
               textColor="#c5be81"
-              onClick={() => alert("test")}
+              onClick={() => history.push("/under-development")}
               margin="10px 0px"
               borderradius="16px"
               padding="5px 15px"
@@ -38,7 +38,7 @@ function Settings() {
           <Col md={{ span: 2 }}>
             <Button
               //children="Color Pallete"
-              onClick={() => alert("I've been clicked")}
+              onClick={() => history.push("/under-development")}
               color="#488B49"
               textColor="#FFFFFF"
               margin="10px 0px"
@@ -56,7 +56,7 @@ function Settings() {
           <Col md={{ span: 2, offset: 4 }}>
             <Button
               //children="Smaller"
-              onClick={() => prompt("type a number in")}
+              onClick={() => history.push("/under-development")}
               color="#488B49"
               textColor="#00000"
               margin="10px 0px"
@@ -71,7 +71,7 @@ function Settings() {
           <Col md={{ span: 2 }}>
             <Button
               //children="Smaller"
-              onClick={() => prompt("type a number in")}
+              onClick={() => history.push("/under-development")}
               color="#488B49"
               textColor="#00000"
               margin="10px 0px"
@@ -89,7 +89,7 @@ function Settings() {
           <Col md={{ span: 2, offset: 4 }}>
             <Button
               //children="Smaller"
-              onClick={() => prompt("type a number in")}
+              onClick={() => history.push("/under-development")}
               color="#488B49"
               textColor="#00000"
               margin="10px 0px"
@@ -104,7 +104,7 @@ function Settings() {
           <Col md={{ span: 2 }}>
             <Button
               //children="Smaller"
-              onClick={() => prompt("type a number in")}
+              onClick={() => history.push("/under-development")}
               color="#488B49"
               textColor="#00000"
               margin="10px 0px"
